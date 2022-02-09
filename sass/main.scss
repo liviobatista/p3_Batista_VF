@@ -1,0 +1,293 @@
+/* Fonts */
+@import "./base/fonts";
+/* Variables coulurs */
+@import "./utils/variables";
+/* Keyframes */
+@import "./utils/keyframes";
+/* Loader-spinner */
+@import "./pages/spin";
+/* Footer */
+@import "./layouts/footer";
+/* Mixins */
+@import "./utils/mixins";
+
+
+/* BODY */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    animation-name: site;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+    font-family: "Shrikhand-Regular";
+    font-size: 28px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+/* MAIN */
+/* Zone */
+.zone {
+    background-color: $color-dark-gray;
+    @include flexrow;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    &__town {
+        font-family: "Roboto-Bold";
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        width: 100px;
+    }
+}
+
+::placeholder {
+    color: #363636;
+    opacity: 1;
+}
+/* Heading */
+.heading {
+    height: 220px;
+    background-color: $color-clear-gray;
+    @include flexcolumn;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    &__quote1 {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        margin: 0 auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+    &__quote2 {
+        font-family: "Roboto-Thin";
+        font-size: 16px;
+        margin: 0 40px;
+        text-align: center;
+    }
+    &__button {
+        font-family: "Roboto-Bold";
+        text-align: center;
+        background: linear-gradient(to right bottom, #ff79da 0%, $color-violet 100%);
+        box-shadow: 3px 3px 8px #adacac;
+        color: $color-white;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        &:hover {
+            color: $color-black;
+            background: linear-gradient(to right bottom, #ff93f4 0%, #ad70f6 100%);
+            box-shadow: 5px 5px 5px #adacac;
+        }
+    }
+}
+
+/**** Fonctionnement ****/
+.function {
+    font-family: "Roboto-Bold";
+    width: 85%;
+    margin: 0 auto;
+    &__title {
+        width: 100%;
+        font-size: 18px;
+        position: relative;
+        right: 15px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+
+.btn {
+    width: 100%;
+    height: 270px;
+    @include flexcolumn;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-icons {
+    position: relative;
+    width: calc(100% + 15px);
+    height: 60px;
+    background-color: $color-clear-gray;
+    color: $color-gray;
+    @include flexrow;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px $color-dark-gray;
+    z-index: 1;
+    &:hover {
+        background-color: #f5edff;
+    }
+    &__number {
+        width: 22px;
+        height: 22px;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background-color: $color-violet;
+        border: 3px solid $color-violet;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 3;
+        position: relative;
+        right: 15px;
+    }
+    .button-icons__icon {
+        width: 20px;
+        margin: 0 10px;
+    }
+    &__txt {
+        padding-left: 10px;
+        text-align: left;
+        font-size: 14px;
+        color: $color-black;
+    }
+}
+
+.fa-store {
+    color: $color-violet;
+}
+
+/* Restaurants */
+.restaurants {
+    width: 85%;
+    margin: 0 auto;
+    font-family: "Roboto-Bold";
+    position: relative;
+    &__title {
+        width: 100%;
+        font-size: 18px;
+        position: relative;
+        right: 15px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    &__cards {
+        width: calc(100% + 15px);
+        @include flexcolumn;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+        position: relative;
+        right: 15px;
+    }
+}
+
+.menilmontant,
+.charonne,
+.citerouge,
+.foliemericourt {
+    width: calc(100% + 15px);
+    height: 280px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: $color-white;
+    @include flexcolumn;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 40px #cdcdcd;
+    position: relative;
+    &__img {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    &__info {
+        height: 80px;
+        color: $color-black;
+    }
+    &__name {
+        width: 100%;
+        height: 30px;
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+        p {
+            padding-top: 20px;
+            padding-left: 15px;
+            margin-top: 0;
+        }
+    }
+    &__place {
+        width: 100%;
+        height: 30px;
+        font-family: "Roboto-Thin";
+        font-size: 16px;
+        position: relative;
+        p {
+            padding-top: 12px;
+            padding-left: 15px;
+            margin-top: 0;
+        }
+    }
+}
+.menilmontant__img p,
+.charonne__img p {
+    width: 100px;
+    height: 30px;
+    background-color: $color-clear-green;
+    color: $color-dark-green;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.far {
+    position: absolute;
+    font-size: 26px;
+    right: 30px;
+    &:hover {
+        animation: heart 1.5s forwards;
+    }
+}
+
+/* Media Querie page index.html */
+@import "./pages/mqindex";

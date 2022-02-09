@@ -1,0 +1,279 @@
+/* Fonts */
+@import "./base/fonts";
+/* Variables coulurs */
+@import "./utils/variables";
+/* Keyframes */
+@import "./utils/keyframes";
+/* Loader-spinner */
+@import "./pages/spin";
+/* Footer */
+@import "./layouts/footer";
+/* Mixins */
+@import "./utils/mixins";
+
+/* BODY */
+body {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: $color-clear-gray;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: relative;
+    background-color: $color-white;
+    padding-top: 15px;
+}
+
+.logo {
+    height: 60px;
+    font-family: 'Shrikhand-Regular';
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+}
+
+.back {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding-top: 15px;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    background-color: transparent;
+    color: $color-black;
+}
+.fas.fa-arrow-left
+{
+    color: $color-black;
+}
+/* MAIN */
+main {
+    background-color: $color-clear-gray;
+}
+
+/* Image */
+.img {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: none;
+    }
+}
+
+/* main Content */
+.main-content {
+    width: 100%;
+    height: 100%;
+    background-color: $color-clear-gray;
+    border: none;
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    position: relative;
+    top: -30px;
+}
+
+/* Header */
+.header {
+    font-family: 'Shrikhand-Regular';
+    font-size: 12px;
+    width: 85%;
+    height: 40px;
+    margin: 0 auto;
+    @include flexrow;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.fa-heart {
+    font-size: 25px;
+    &:hover {
+        animation: heart 1.5s forwards;
+    }
+}
+
+/*buttons*/
+.begin, .dishes, .desserts {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    @include flexcolumn;
+    flex-wrap: nowrap;
+    gap: 20px;
+    &__title--border
+    {
+        border-bottom: 3px;
+        border-color: $color-clear-green;
+        border-style: none none solid none;
+        padding-bottom: 10px;
+    }
+    &__bloc
+    {   @include flexcolumn;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+}
+
+.begin__bloc2
+{   @include flexcolumn;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+@import "./pages/mqmenu";
+
+.button {
+    font-family: 'Roboto-Thin';
+    background-color: $color-white;
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+    color: #000;
+    @include flexrow;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px $color-dark-gray;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    &__name {
+        font-family: 'Roboto-Bold';
+        font-size: 16px;
+        margin-top: 0;
+        padding-top: 5px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 15px;
+    }
+    &__surname {
+        font-family: 'Roboto-Thin';
+        font-size: 16px;
+        height: 20px;
+        margin-top: 0;
+        padding-top: 5px;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.anim2
+{
+    animation-delay:250ms;
+}
+.anim3
+{
+    animation-delay: 500ms;
+}
+.anim4
+{
+    animation-delay: 750ms;
+}
+
+.button:hover .ico {
+    transform: translatex(0);
+    transition: transform 700ms;
+}
+
+.button:hover .price {
+    transform: translatex(0);
+    transition: transform 700ms;
+}
+
+.button:hover .fas {
+    transform: rotate(360deg);
+    transition: transform 700ms;
+}
+
+.left {
+    width: 70%;
+@include flexcolumn;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+.right {
+    @include flexrow;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.price {
+    font-family: 'Roboto-Bold';
+    position: relative;
+    padding-right: 10px;
+    padding-top: 25px;
+    overflow: visible;
+    transform: translatex(60px);
+    transition: transform 700ms;
+}
+
+.ico {
+    width: 60px;
+    height: 75px;
+    background-color: $color-clear-green;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    transform: translatex(60px);
+    transition: transform 700ms;
+    overflow: hidden;
+}
+
+.fa-check-circle {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: $color-white;
+}
+
+/******************************* keyframes opacity ***************************/
+
+/*commande*/
+.commande {
+    width: 152px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+    &__button {
+        font-family: 'Roboto-Bold';
+        text-align: center;
+        background: linear-gradient(to right bottom, #FF79DA 0%, $color-violet 100%);
+        box-shadow: 3px 3px 8px #adacac;
+        color: $color-white;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+        &:hover {
+            color: $color-black;
+            background: linear-gradient(to right bottom, #FF93F4 0%, #AD70F6 100%);
+            box-shadow: 5px 5px 5px #adacac;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@media (min-width: 900px) {
+    .begin__bloc, .begin__bloc2, .dishes__bloc, .desserts__bloc
+    { 
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .begin__bloc .button, .begin__bloc2 .button, .dishes__bloc .button, .desserts__bloc .button
+    {
+        width:50%;
+    }
+
+    .begin__bloc a:nth-child(1) {
+        align-self: flex-start;
+      }
+      
+      .begin__bloc a:nth-child(2) {
+        align-self: center;
+      }
+      
+      .begin__bloc a:nth-child(3) {
+        align-self: flex-end;
+      } 
+      .begin__bloc2 a:nth-child(1) {
+        align-self: flex-start;
+      }
+      
+      .begin__bloc2 a:nth-child(2) {
+        margin-left: 16.6%;
+      }
+      
+      .begin__bloc2 a:nth-child(3) {
+        margin-left: 33.3%;
+      } 
+      .begin__bloc2 a:nth-child(4) {
+        align-self: flex-end;
+      }
+      .dishes__bloc a:nth-child(1) {
+        align-self: flex-start;
+      }
+      
+      .dishes__bloc a:nth-child(2) {
+        align-self: center;
+      }
+      
+      .dishes__bloc a:nth-child(3) {
+        align-self: flex-end;
+      } 
+      .desserts__bloc a:nth-child(1) {
+        align-self: flex-start;
+      }
+      
+      .desserts__bloc a:nth-child(2) {
+        align-self: center;
+      }
+      
+      .desserts__bloc a:nth-child(3) {
+        align-self: flex-end;
+      } 
+      .begin__title, .dishes__title, .desserts__title
+      {
+          text-align: center;
+      }
+}

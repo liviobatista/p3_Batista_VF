@@ -1,0 +1,97 @@
+ @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+        30% {
+            font-size: 100px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+        50% {
+            transform: translatex(0);
+            font-size: 100px;
+        }
+        100% {
+            transform: translatex(150%); 
+            font-size: 100px;
+        }
+    }
+
+    @keyframes site {
+        0% {
+            opacity: 0;
+        }
+        99% {
+            opacity: 0;
+        }
+        99.5% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    
+@keyframes heart {
+    0% {
+        color: $color-white;
+        font-weight: 300;
+    }
+
+    15% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: $color-white;
+    }
+
+    20% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: #efe2fa;
+    }
+
+    32% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: #dec6f4;
+    }
+
+    50% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: #cdaaef;
+    }
+
+    66% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: #bb8ee9;
+    }
+
+    83% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: #a872e3;
+    }
+
+    100% {
+        background-clip: content-box;
+        font-weight: 600;
+        color: $color-violet;
+    }
+}
+
+@keyframes opacity {
+    0%
+    {
+    transform: translatey(0);
+    opacity: 0;
+    }
+    100%
+    {
+    transform: translatey(-10px);
+    opacity: 1;
+    }
+}

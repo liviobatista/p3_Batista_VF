@@ -1,0 +1,43 @@
+.footer {
+    background-color: $color-footer;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    &--bloc {
+        width: 85%;
+        position: relative;
+        right: 15px;
+        margin: 0 auto;
+        color: $color-white;
+    }
+    &__title {
+        font-family: "Shrikhand-Regular";
+        font-weight: bold;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    &__links > li {
+        color: $color-white;
+        text-decoration: none;
+        list-style-type: none;
+    }
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+li a {
+    color: $color-white;
+    :hover {
+        color: $color-violet;
+    }
+}
+
+.fa-utensils, .fa-handshake {
+    width: 30px;
+}

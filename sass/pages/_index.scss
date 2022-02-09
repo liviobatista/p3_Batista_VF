@@ -1,0 +1,163 @@
+/* Media queries SPIN */
+@media (min-width: 360px) and (max-width: 449px) {
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+    
+        30% {
+            font-size: 45px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+    
+        50% {
+            transform: translatex(0);
+            font-size: 45px;
+        }
+    
+    
+        100% {
+            transform: translatex(150%); 
+            font-size: 45px;
+        }
+    }
+}
+@media (min-width: 450px) and (max-width: 549px) {
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+    
+        30% {
+            font-size: 55px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+    
+        50% {
+            transform: translatex(0);
+            font-size: 55px;
+        }
+    
+    
+        100% {
+            transform: translatex(150%); 
+            font-size: 55px;
+        }
+    }
+}
+@media (min-width: 550px) and (max-width: 649px) {
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+    
+        30% {
+            font-size: 70px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+    
+        50% {
+            transform: translatex(0);
+            font-size: 70px;
+        }
+    
+    
+        100% {
+            transform: translatex(150%); 
+            font-size: 70px;
+        }
+    }
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+    
+        30% {
+            font-size: 80px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+    
+        50% {
+            transform: translatex(0);
+            font-size: 80px;
+        }
+    
+    
+        100% {
+            transform: translatex(150%); 
+            font-size: 80px;
+        }
+    }
+}
+
+@media (min-width: 750px) and (max-width: 849px) {
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            font-size: 5px;
+        }
+    
+        30% {
+            font-size: 90px;
+            opacity: 1;
+            transform: translatex(0);
+        }
+    
+        50% {
+            transform: translatex(0);
+            font-size: 90px;
+        }
+    
+    
+        100% {
+            transform: translatex(150%); 
+            font-size: 90px;
+        }
+    }
+}
+
+/* Media queries FONCTIONNEMENT */
+@media (min-width: 950px) {
+    .btn{
+        width: calc(100% + 15px);
+        height : 80px;
+        padding-top: 20px;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .button-icons {
+        width: 33%;
+    }
+    }
+
+
+/* Media queries RESTAURANTS */
+@media (min-width: 764px) {
+    .restaurants__cards {
+        width: calc(100% + 30px);
+        padding-top: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+        right: 15px;
+    }
+    .menilmontant, .charonne, .citerouge, .foliemericourt {
+        width: 48.5%;
+    }
+    }
